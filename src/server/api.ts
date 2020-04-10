@@ -42,6 +42,7 @@ export class API {
 
     this.app.get("/api/tasks", this.list);
     this.app.post("/api/tasks", this.create);
+    this.app.post("/api/tasks/:id/done", this.done);
 
     this.app.use("/", express.static(this.conf.WebRoot));
   }
@@ -62,4 +63,13 @@ export class API {
     const id = this.repository.AddTask(task);
     res.json({ id });
   }
+
+  /**
+   * タスクの完了
+   */
+  private done = (req: express.Request, res: express.Response) => {
+    const id = parseInt(req.params.id, 10);
+    this.repository.DoneTask(id);
+    res.json({});
+  };
 }
