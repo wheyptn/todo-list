@@ -8,13 +8,13 @@ npm: 6.14.4
 npm install
 
 ## build
- ./node_modules/.bin/tsc
+npm run tsc
 
 ## bundle
-./node_modules/.bin/webpack
+npm run webpack
 
 ## run
-node ./out/src/server/main.js
+npm run start
 
 ## check
 http://localhost:8080/
