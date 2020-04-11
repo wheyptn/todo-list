@@ -1,5 +1,9 @@
 # todo-list
 
+## require
+node: 13.12.0<br>
+npm: 6.14.4
+
 ## install
 npm install
 
