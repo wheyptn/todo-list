@@ -1,0 +1,13 @@
+{
+  "mochaExplorer.mochaPath": "./node_modules/mocha",
+  "mochaExplorer.files": "tests/**/*.ts",
+  "mochaExplorer.require": [
+    "ts-node/register",
+  ],
+  "mochaExplorer.cwd": "./",
+  "mochaExplorer.env": {
+    "NODE_PATH": "./",
+  },
+  "editor.codeLens": true,
+  "testExplorer.codeLens": true
+}
